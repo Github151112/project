@@ -11,6 +11,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 /**
  * @author AMAN SINGH 
@@ -19,8 +21,8 @@ import org.testng.annotations.BeforeTest;
 
 public class BaseTest implements IAutoConstant {
 
-	FileUtility f = new FileUtility();
-	WebDriverUtility w = new WebDriverUtility();
+	public FileUtility f = new FileUtility();
+	public WebDriverUtility w = new WebDriverUtility();
 	public WebDriver driver;
 
 	@BeforeSuite
@@ -33,9 +35,10 @@ public class BaseTest implements IAutoConstant {
 		Reporter.log("===database connected sucessfully===", true);
 	}
 
+	@Parameters("browser")
 	@BeforeClass
-	public void setUp() {
-		String browser = f.retrieveDataFromProperty(PROP_PATH, "browser");
+	public void setUp(@Optional("chrome") String browser) {
+		//String browser = f.retrieveDataFromProperty(PROP_PATH, "browser");
 		String url = f.retrieveDataFromProperty(PROP_PATH, "url");
 		switch (browser) {
 		case "chrome":

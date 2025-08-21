@@ -76,7 +76,6 @@ public class RegisterPage extends BaseClass {
 		passwordTextField.sendKeys(password);
 		confirmPasswordTextField.sendKeys(password);
 		registerButton.click();
-		logoutLink.click();
 	}
 	
 

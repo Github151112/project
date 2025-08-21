@@ -22,8 +22,10 @@ public class RegisterTest extends BaseTest {
 	public void register(String firstName, String lastName, String email, String password) {
 		WelcomePage wp = new WelcomePage(driver);
 		wp.getRegisterLink().click();
+		
 		RegisterPage rp = new RegisterPage(driver);
 		rp.registration(driver, "Male", firstName, lastName, email, password);
+		rp.getLogoutLink().click();
 		
 
 	}

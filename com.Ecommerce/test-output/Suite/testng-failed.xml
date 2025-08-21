@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.Ecommerce.shoppingCart.CheckOutTest">
+        <methods>
+          <include name="toCloseDb"/>
+          <include name="toConnectServer"/>
+          <include name="toCloseServer"/>
+          <include name="checkOutOperation"/>
+          <include name="toConnectDatabase"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Ecommerce.shoppingCart.CheckOutTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
