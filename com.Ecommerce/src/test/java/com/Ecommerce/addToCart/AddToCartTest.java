@@ -13,7 +13,7 @@ public class AddToCartTest extends BaseTest {
 	public void addToCart() throws InterruptedException {
         Thread.sleep(5000);
 		WelcomePage wp = new WelcomePage(driver);
-		wp.getProductAddToCart(driver, "14.1-inch Laptop");
+		wp.getProductAddToCart(driver, "14.1-inch Laptop").click();
 		Thread.sleep(5000);
 		
 		//d123456789@gmail.com

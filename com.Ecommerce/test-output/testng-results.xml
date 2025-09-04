@@ -20,26 +20,26 @@
       <![CDATA[==server closed sucessfully==]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-08-28T16:26:49 IST" name="Default suite" finished-at="2025-08-28T16:26:57 IST" duration-ms="7897">
+  <suite started-at="2025-09-04T13:42:43 IST" name="Default suite" finished-at="2025-09-04T13:42:58 IST" duration-ms="15410">
     <groups>
     </groups>
-    <test started-at="2025-08-28T16:26:49 IST" name="Default test" finished-at="2025-08-28T16:26:57 IST" duration-ms="7897">
-      <class name="com.Ecommerce.register.RegisterTest">
-        <test-method is-config="true" signature="toConnectServer()[pri:0, instance:com.Ecommerce.register.RegisterTest@1033576a]" started-at="2025-08-28T16:26:49 IST" name="toConnectServer" finished-at="2025-08-28T16:26:49 IST" duration-ms="23" status="PASS">
+    <test started-at="2025-09-04T13:42:43 IST" name="Default test" finished-at="2025-09-04T13:42:58 IST" duration-ms="15410">
+      <class name="com.Ecommerce.addToCart.AddToCartTest">
+        <test-method is-config="true" signature="toConnectServer()[pri:0, instance:com.Ecommerce.addToCart.AddToCartTest@7ce026d3]" started-at="2025-09-04T13:42:43 IST" name="toConnectServer" finished-at="2025-09-04T13:42:43 IST" duration-ms="17" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[===server started===]]>
             </line>
           </reporter-output>
         </test-method> <!-- toConnectServer -->
-        <test-method is-config="true" signature="toConnectDatabase()[pri:0, instance:com.Ecommerce.register.RegisterTest@1033576a]" started-at="2025-08-28T16:26:49 IST" name="toConnectDatabase" finished-at="2025-08-28T16:26:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="toConnectDatabase()[pri:0, instance:com.Ecommerce.addToCart.AddToCartTest@7ce026d3]" started-at="2025-09-04T13:42:43 IST" name="toConnectDatabase" finished-at="2025-09-04T13:42:43 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[===database connected sucessfully===]]>
             </line>
           </reporter-output>
         </test-method> <!-- toConnectDatabase -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Ecommerce.register.RegisterTest@1033576a]" started-at="2025-08-28T16:26:49 IST" name="setUp" finished-at="2025-08-28T16:26:54 IST" duration-ms="4556" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Ecommerce.addToCart.AddToCartTest@7ce026d3]" started-at="2025-09-04T13:42:43 IST" name="setUp" finished-at="2025-09-04T13:42:47 IST" duration-ms="4687" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,54 +53,32 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="register(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Ecommerce.register.RegisterTest@1033576a]" started-at="2025-08-28T16:26:55 IST" name="register" data-provider="TestData" finished-at="2025-08-28T16:26:57 IST" duration-ms="2095" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Meer0a]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Agarwal]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[m8541ee9652ra.agarwal@inbox.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[)bmr@v&ns=94]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="addToCart()[pri:0, instance:com.Ecommerce.addToCart.AddToCartTest@7ce026d3]" started-at="2025-09-04T13:42:47 IST" name="addToCart" finished-at="2025-09-04T13:42:58 IST" duration-ms="10264" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Ecommerce.register.RegisterTest@1033576a]" started-at="2025-08-28T16:26:57 IST" name="tearDown" finished-at="2025-08-28T16:26:57 IST" duration-ms="301" status="PASS">
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Ecommerce.addToCart.AddToCartTest@7ce026d3]" started-at="2025-09-04T13:42:58 IST" name="tearDown" finished-at="2025-09-04T13:42:58 IST" duration-ms="382" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==browser closed sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="toCloseDb()[pri:0, instance:com.Ecommerce.register.RegisterTest@1033576a]" started-at="2025-08-28T16:26:57 IST" name="toCloseDb" finished-at="2025-08-28T16:26:57 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="toCloseDb()[pri:0, instance:com.Ecommerce.addToCart.AddToCartTest@7ce026d3]" started-at="2025-09-04T13:42:58 IST" name="toCloseDb" finished-at="2025-09-04T13:42:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==database closed sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- toCloseDb -->
-        <test-method is-config="true" signature="toCloseServer()[pri:0, instance:com.Ecommerce.register.RegisterTest@1033576a]" started-at="2025-08-28T16:26:57 IST" name="toCloseServer" finished-at="2025-08-28T16:26:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="toCloseServer()[pri:0, instance:com.Ecommerce.addToCart.AddToCartTest@7ce026d3]" started-at="2025-09-04T13:42:58 IST" name="toCloseServer" finished-at="2025-09-04T13:42:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==server closed sucessfully==]]>
             </line>
           </reporter-output>
         </test-method> <!-- toCloseServer -->
-      </class> <!-- com.Ecommerce.register.RegisterTest -->
+      </class> <!-- com.Ecommerce.addToCart.AddToCartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
