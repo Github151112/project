@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Ecommerce.login.LoginTest">
+      <class name="com.Ecommerce.register.RegisterTest">
         <methods>
+          <include name="register" invocation-numbers="0"/>
           <include name="toCloseDb"/>
-          <include name="toCloseServer"/>
           <include name="toConnectServer"/>
+          <include name="toCloseServer"/>
           <include name="toConnectDatabase"/>
           <include name="tearDown"/>
-          <include name="positiveLoginTest" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.Ecommerce.login.LoginTest -->
+      </class> <!-- com.Ecommerce.register.RegisterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

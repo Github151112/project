@@ -1,9 +1,12 @@
 package com.Ecommerce.addToCart;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.Ecommerce.genericUtility.BaseTest;
+import com.Ecommerce.genericUtility.CustomListener;
 import com.Ecommerce.objectRepository.WelcomePage;
 
+@Listeners(CustomListener.class)
 public class AddToCartTest extends BaseTest {
 
 	@Test

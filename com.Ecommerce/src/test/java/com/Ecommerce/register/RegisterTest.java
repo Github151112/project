@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.Ecommerce.genericUtility.BaseTest;
 import com.Ecommerce.genericUtility.ExcelUtility;
@@ -22,11 +23,11 @@ public class RegisterTest extends BaseTest {
 	public void register(String firstName, String lastName, String email, String password) {
 		WelcomePage wp = new WelcomePage(driver);
 		wp.getRegisterLink().click();
-		
+		SoftAssert s = new SoftAssert();
+		s.assertEquals(driver.getTitle(), "Demo Web Shop. Register");
 		RegisterPage rp = new RegisterPage(driver);
 		rp.registration(driver, "Male", firstName, lastName, email, password);
-		rp.getLogoutLink().click();
-		
+		s.assertAll();
 
 	}
 }
